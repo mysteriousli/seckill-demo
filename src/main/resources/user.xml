@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--定义一个名为cdBean的Bean-->
+    <bean name="A" class="com.example.seckilldemo.pojo.A">
+        <!--默认值注入-->
+        <property name="B" ref="B"/>
+    </bean>
+    <!--定义一个名为cdBean的Bean-->
+    <bean name="B" class="com.example.seckilldemo.pojo.B">
+        <!--默认值注入-->
+        <property name="name" value="张三"/>
+    </bean>
+</beans>
